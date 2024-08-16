@@ -1,2 +1,2 @@
-# Biosenales
-## Juan Diego - Kevin Garcia
+# Biosenales 6am
+## Juan Diego Caguasango- Kevin Garcia Jaramillo
