@@ -60,16 +60,28 @@ print("dimensiones de A: ",A.ndim)
 # j) 
 rango_1 = np.arange(0,100)
 seno = np.sin(np.pi*rango_1*0.12)
+cos = np.cos(np.pi*2*0.03*rango_1)
 
-fig, ax = plt.figure(), plt.axes()
+fig, ax = plt.figure(1), plt.axes()
 
-ax.plot(rango_1, seno, label='sin(x)', color='blue', linestyle='-', linewidth=2)
-ax.plot(rango_1, seno*2, label='sin(x)', color='yellow', linestyle='-', linewidth=1)
-ax.set_title('Función Seno')
+ax.plot(rango_1, seno, label='sin⁡(π*0.12n)', color='blue', linestyle='-', linewidth=2)
+ax.plot(rango_1, cos, label='cos⁡(2π*0.03n)', color='green', linestyle='-', linewidth=1)
+ax.set_title('Función sin⁡(π*0.12n) y cos⁡(2π*0.03n)')
 ax.set_xlabel('x')
-ax.set_ylabel('sin(x)')
+ax.set_ylabel('y')
 ax.grid()
+ax.legend()
 
+
+fig, ax = plt.figure(2), plt.axes()
+
+ax.plot(rango_1, seno, label='sin⁡(π*0.12n)', color='blue', linestyle='-', linewidth=2)
+ax.plot(rango_1, cos, label='cos⁡(2π*0.03n)', color='green', linestyle='-', linewidth=1)
+ax.set_title('Función sin⁡(π*0.12n) y cos⁡(2π*0.03n)')
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.grid()
+ax.legend()
 plt.show()
 
 
