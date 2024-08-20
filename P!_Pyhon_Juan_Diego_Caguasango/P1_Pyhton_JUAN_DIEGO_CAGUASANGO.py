@@ -44,3 +44,13 @@ array_2 = np.array([1.8, 2.5, 3.7])
 floored = np.floor(array_2)
 print("Array redondeado hacia abajo: ",floored)
 
+# g)Acceda al valor de la primera fila,
+#  tercera columna de la matriz A, imprímalo en consola
+valorA = A[0,2]
+print("Valor A(3,2): ",valorA)
+
+# h)
+print("segunda fila de la matriz A: ",A[1])
+
+#i) 
+print("dimensiones de A: ",A.ndim)
