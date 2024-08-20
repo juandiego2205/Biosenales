@@ -54,3 +54,7 @@ print("segunda fila de la matriz A: ",A[1])
 
 #i) 
 print("dimensiones de A: ",A.ndim)
+
+# j) 
+rango_1 = np.arange(0,100)
+seno = np.sin(np.pi*rango_1*0.12)
