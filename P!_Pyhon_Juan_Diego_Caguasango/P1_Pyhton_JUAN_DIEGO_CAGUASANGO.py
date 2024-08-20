@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 # a) Cree el siguiente par de vectores:
 a = np.array([3.1 , 1 , -0.5, -3.2, 6 ])
 b= np.array([ 1, 3 , 2.2 , 5.1, 1 ])
@@ -58,3 +60,16 @@ print("dimensiones de A: ",A.ndim)
 # j) 
 rango_1 = np.arange(0,100)
 seno = np.sin(np.pi*rango_1*0.12)
+
+fig, ax = plt.figure(), plt.axes()
+
+ax.plot(rango_1, seno, label='sin(x)', color='blue', linestyle='-', linewidth=2)
+ax.plot(rango_1, seno*2, label='sin(x)', color='yellow', linestyle='-', linewidth=1)
+ax.set_title('Función Seno')
+ax.set_xlabel('x')
+ax.set_ylabel('sin(x)')
+ax.grid()
+
+plt.show()
+
+
