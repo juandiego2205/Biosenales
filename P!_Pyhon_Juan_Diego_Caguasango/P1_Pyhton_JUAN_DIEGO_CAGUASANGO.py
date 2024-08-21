@@ -90,3 +90,25 @@ ax.legend()
 plt.show()
 
 
+#RETO 
+print()
+print("BIENVENIDO AL RETO")
+def resumen(notas):
+    tabla=pd.Series(list(notas.values()),list(notas.keys()))
+    print("nota maxima",tabla.max())
+    print("nota minima",tabla.min())
+    print("nota media",tabla.mean())
+    print("nota std",tabla.std())
+    
+notas_alumnos = {
+    "Juan": 5,
+    "Ana": 2,
+    "Luis": 4,
+    "Marta": 4,
+    "Pedro": 3
+}
+resumen(notas_alumnos)
+
+
+
+
