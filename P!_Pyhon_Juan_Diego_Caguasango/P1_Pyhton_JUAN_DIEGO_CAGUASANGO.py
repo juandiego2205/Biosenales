@@ -58,7 +58,7 @@ print("segunda fila de la matriz A: ",A[1])
 print("dimensiones de A: ",A.ndim)
 
 # j) 
-rango_1 = np.arange(0,100)
+rango_1 = np.arange(0,101)
 seno = np.sin(np.pi*rango_1*0.12)
 #k)
 cos = np.cos(np.pi*2*0.03*rango_1)
@@ -71,9 +71,9 @@ fig, ax = plt.figure(1), plt.axes()
 
 ax.plot(rango_1, seno, label='sin⁡(π*0.12n)', color='blue', linestyle='-', linewidth=2)
 ax.plot(rango_1, cos, label='cos⁡(2π*0.03n)', color='black', linestyle='-', linewidth=1)
-ax.set_title('Función sin⁡(π*0.12n) y cos⁡(2π*0.03n)')
-ax.set_xlabel('x')
-ax.set_ylabel('y')
+ax.set_title('Graficas sin⁡(π*0.12n) y cos⁡(2π*0.03n)')
+ax.set_xlabel('[n]')
+ax.set_ylabel('Y')
 ax.grid()
 ax.legend()
 
@@ -82,11 +82,33 @@ fig, ax = plt.figure(2), plt.axes()
 
 ax.plot(rango_1, suma_senales, label='Suma_seÑales', color='red', linestyle='-', linewidth=2)
 ax.plot(rango_1, prod_senales, label='Prod_seÑales', color='green', linestyle='-', linewidth=1)
-ax.set_title('Suma y Producto de sin⁡(π*0.12n) y cos⁡(2π*0.03n) ')
-ax.set_xlabel('x')
-ax.set_ylabel('y')
+ax.set_title('Grafica de Suma y Producto de sin⁡(π*0.12n) y cos⁡(2π*0.03n) ')
+ax.set_xlabel('[n]')
+ax.set_ylabel('Y')
 ax.grid()
 ax.legend()
 plt.show()
+
+
+#RETO 
+print()
+print("BIENVENIDO AL RETO")
+def resumen(notas):
+    tabla=pd.Series(list(notas.values()),list(notas.keys()))
+    print("nota maxima",tabla.max())
+    print("nota minima",tabla.min())
+    print("nota media",tabla.mean())
+    print("nota std",tabla.std())
+    
+notas_alumnos = {
+    "Juan": 5,
+    "Ana": 2,
+    "Luis": 4,
+    "Marta": 4,
+    "Pedro": 3
+}
+resumen(notas_alumnos)
+
+
 
 
