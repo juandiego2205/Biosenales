@@ -90,7 +90,7 @@ print(ANew2)
 
 """##**I) Dimensiones de Matriz**"""
 
-Dim=np.shape(A)
+Dim=np.ndim(A)
 print(Dim)
 
 """##**J) Primera Función**"""
