@@ -85,12 +85,12 @@ print(ANew)
 
 """##**H) Segunda Fila de matriz**"""
 
-ANew2=A[2]
+ANew2=A[1]
 print(ANew2)
 
 """##**I) Dimensiones de Matriz**"""
 
-Dim=np.shape(A)
+Dim=np.ndim(A)
 print(Dim)
 
 """##**J) Primera Función**"""
@@ -100,7 +100,7 @@ Y=np.sin(np.pi*0.12*n)
 
 """##**K) Segunda Función**"""
 
-Y2=np.sin(2*np.pi*0.03*n)
+Y2=np.cos(2*np.pi*0.03*n)
 
 """##**L) Suma y Producto de Funciones**"""
 
